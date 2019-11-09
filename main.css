@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+
+/* For the background colors */
+
+nav {
+    background-color: #0A0000;
+    color: #fff;
+}
+.navbar-brand {
+    margin: 0;
+}
+main {
+    background-color: #fff;
+}
+
+footer {
+    display: flex;
+    background-color: #0A0000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 50px
+}
+
+/* NAVIGATION */
+a {
+    color: #adb5bd;
+    padding: 5px;
+}
+a:hover {
+    color: #4C0A2D;
+}
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+} 
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    justify-content: flex-end;
+} */
+
+.cover {
+    background: url("images/bg.png") center no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    color: #4C0A2D;
+}
+h1, h3 {
+    color: #21f3d6;
+}
+.btn {
+    font-weight: 700;
+    border-radius: 300px;
+    text-transform: uppercase;
+}
+.btn-primary {
+    background-color: #462389;
+    border-color: #462389;
+}
+.btn-primary:hover {
+    background-color: #997dd0;
+    border-color: #997dd0;
+}
+/* 
+.btn-bg {
+    padding: 20px;
+} */
+.about {
+    padding: 20px;
+    text-align: center;
+}
+blockquote {
+    display: block;
+    position: relative;
+    text-align: right;
+    font-style: italic;
+}
+
+blockquote:after {
+    content: "\2013 \2003" attr(cite);
+    display: block;
+    text-align: right;
+    font-size: smaller;
+    color: #0D0007;
+    font-style: italic;
+}
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.box>img {
+        position: relative;
+        width:  300px;
+        height: 300px;
+        background-position: 50% 50%;
+        background-repeat:   no-repeat;
+        background-size:     cover;
+        transition: all 1s;
+}
+.box>img:hover {
+    transform: scale(1.1);
+}
+.box {
+    /* background-color: #444; */
+    padding: 20px;
+    margin: 10px;
+}
+.box>h6 {
+    padding: 20px;
+    text-align: center;
+}
+.fab:hover {
+    color: #4C0A2D;
+}

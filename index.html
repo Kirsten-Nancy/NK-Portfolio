@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NK|Portfolio</title>
+    <script src="https://kit.fontawesome.com/6e091b17ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Correction. Using flexbox and grid layout at different parts of the page. -->
+    <!-- For nav-give a class to the ul, use flex. then for alignment  of the margin property,left or right -->
+    <!-- For the cover, use a container, align-items and justify content to vertically align the text there. Can 
+    i use it for something else? media queries to make it responsive-->
+    <!-- The main part use the css grid. Template columns and all -->
+    <!-- For images, width: 100% to make it responsive -->
+    <!-- To adjust the image, use an enclosing div the adjust the padding and margin thus reducing image size-->
+    <!-- <nav class="sticky">
+        <ul class="main-nav">
+            <li class="push-left">NK</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav> -->
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">NK</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="cover" id="contact">
+        <div class="container d-flex align-items-center h-100">
+            <div class="row">
+                <div class="text-center col-12">
+                    <h1>Hello, I'm Nancy Korir.</h1>
+                    <h3>Full Stack Developer.</h3>
+                    <!-- <button class="btn btn-primary btn-bg">click for more</button> -->
+                    <a href="https://github.com/Kirsten-Nancy" target="blank">
+                        <i class="fab fa-2x fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nancy-korir-a53402110/" target="blank">
+                        <i class="fab fa-2x fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/korjnan" target="blank">
+                        <i class="fab fa-2x fa-twitter-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about-me">
+        <h2 class="text-uppercase">About Korir</h2>
+        <hr>
+        <p>
+            Daughter, Student, Future Coder. <br>
+            In Search of Life's Meaning.
+        </p>
+        <blockquote cite="Atticus">
+            <small>
+                It's when you know you're licked before you begin but you begin anyway and you see it through no matter
+                what. You rarely win,
+                but sometimes you do.
+            </small>
+        </blockquote>
+    </div>
+    <main class="grid-wrapper" id="projects">
+        <div class="box">
+            <img src="images/pj1.jpeg" alt="">
+            <h6>Art</h6>
+        </div>
+        <div class="box">
+            <img src="images/cooking.png" alt="">
+            <h6>Cooking</h6>
+        </div>
+        <div class="box">
+            <img src="images/pj3.png" alt="">
+            <h6>Technology</h6>
+        </div>
+        <div class="box">
+            <img src="images/home.png" alt="">
+            <h6>Home</h6>
+        </div>
+        <div class="box">
+            <img src="images/books.png" alt="">
+            <h6>Books</h6>
+        </div>
+        <div class="box">
+            <img src="images/pj6.png" alt="">
+            <h6>Abstract</h6>
+        </div>
+
+    </main>
+    <footer>
+        &copy;Made by Korir,2019
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
